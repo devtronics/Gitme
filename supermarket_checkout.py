@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-:wq
-=======
+
 shopping_list = ["banana", "orange", "pear", "apple"]
 
 stock = {
@@ -14,8 +12,14 @@ prices = {
 	"banana": 4,
 	"apple": 2,
 	"orange": 1.5,
-	"pear": 3,
+	"pear": 3
 }
 
+def compute_bill(food):
+	total = 0
+	for item in food:
+		if stock[item] > 0:
+			total += prices[item]
+			stock[item] -= 1
+	return total
 
->>>>>>> 62288e929ceb93ada44f11b5d28a028e863a092e
