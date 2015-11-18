@@ -4,8 +4,19 @@
 
 
 class ListOps():
-    """List operations"""
+
+    """List operations
+
+    Initialize this class with a list i.e.
+
+    list_ops = ListOps(range(10))
+    a_list = list_ops.double_list()
+    """
+
     def __init__(self, a):
+        """Use the __init__ function to
+        initialize class attributes.
+        """
         self.a = a
 
     def double_list(self):
