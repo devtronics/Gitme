@@ -6,3 +6,11 @@ for number in range(5):
     board.append(o)
     """ created 5 rows with 5 Os to
         create the battleship board """
+
+def print_board(board):
+    for row in board:
+        print " ".join(row)
+    # comma's removed and board cleaned up
+
+print_board(board)
+
