@@ -1,4 +1,7 @@
 board = []
+guess_row = int(raw_input("Guess Row: "))
+guess_col = int(raw_input("Guess Col: "))
+# takes userinput for row and col to "seek" hidden ship
 
 for number in range(5):
     o = ["O"] * 5
@@ -17,6 +20,8 @@ def random_row(board):
 
 def random_col(board):
     return randint(0, len(board) - 1)
+    # 2 functions to find a random row & column value for ship
 
-print_board(board)
+ship_row = random_row(board)
+ship_col = random_col(board)
 
