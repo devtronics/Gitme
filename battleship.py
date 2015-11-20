@@ -7,8 +7,8 @@ for number in range(5):
     o = ["O"] * 5
     print o
     board.append(o)
-    """ created 5 rows with 5 Os to
-        create the battleship board """
+    # created 5 rows with 5 Os to
+    #create the battleship board """
 
 def print_board(board):
     for row in board:
@@ -24,4 +24,10 @@ def random_col(board):
 
 ship_row = random_row(board)
 ship_col = random_col(board)
+
+print ship_row
+print ship_col
+
+if guess_row == ship_row and guess_col == ship_col:
+    print "Congratulations! You sank my battleship!"
 
