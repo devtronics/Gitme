@@ -10,7 +10,7 @@ for number in range(5):
 def print_board(board):
     for row in board:
         print " ".join(row)
-    # comma's removed and board cleaned up
+    # comma's and brackets removed and board cleaned up
 
 print_board(board)
 
