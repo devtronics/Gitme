@@ -36,5 +36,12 @@ if guess_row == ship_row and guess_col == ship_col:
 else:
     print "You missed my battleship!"
     board[guess_row][guess_col] = "X"
-    print print_board[board]
+    print print_board(board)
     # if guess is wrong returns message and an X on wrong guesss
+
+    if guess_row not in range(5) or guess_col not in range(50)
+        print "Oops, that's not even in the ocean."
+
+    else:
+        print "You missed my battleship!"
+
