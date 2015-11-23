@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# Copyright 2015 Chris Heckler <hecklerchris@hotmail.com>
+# GNU Affero General Public License version 3 (see the file LICENSE).
+
+
 from random import randint
 
 board = []
